@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+::selection {
+  color: #ffff;
+  background: rgb(142, 73, 232);
+}
+
+body {
+  height: 100vh;
+  background: url("/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  padding: 25px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.container .heading h3 {
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  color: rgb(53, 59, 65);
+}
+
+.container .input-field {
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  height: 45px;
+}
+
+.input-field input {
+  width: 90%;
+  height: 100%;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid rgb(81, 86, 92);
+  background: none;
+  font-size: 17px;
+  padding-left: 15px;
+  transition: all 0.3s ease;
+  color: rgb(53, 59, 65);
+}
+
+.input-field input:focus {
+  border-color: #5271c9;
+}
+
+.input-field button {
+  width: 50px;
+  height: 100%;
+  border: none;
+  color: #fff;
+  margin-left: 5px;
+  font-size: 21px;
+  outline: none;
+  background: #5271c9;
+  cursor: pointer;
+  border-radius: 3px;
+  pointer-events: none;
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+
+.input-field button:hover {
+  background: #3c5fc0;
+}
+
+.input-field button.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.container .task-list {
+  max-height: 250px;
+  overflow-y: auto;
+}
+
+.task-list li {
+  position: relative;
+  list-style: none;
+  height: 45px;
+  line-height: 45px;
+  margin-bottom: 8px;
+  /* background: #76b6ff; */
+  background: rgba(39, 133, 255, 0.3);
+  border-radius: 3px;
+  padding: 0 15px;
+  cursor: default;
+  overflow: hidden;
+}
+
+.task-list li .icon {
+  position: absolute;
+  right: -45px;
+  background: #ffb29b;
+  width: 45px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.task-list li:hover .icon {
+  right: 0px;
+}
+
+.footer {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer {
+  margin-top: 20px;
+}
+
+.footer button {
+  padding: 6px 10px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 5px;
+  background: #5271c9;
+  cursor: pointer;
+  user-select: none;
+  opacity: 0.6;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.footer button.active {
+  opacity: 1;
+  pointer-events: auto;
+}
